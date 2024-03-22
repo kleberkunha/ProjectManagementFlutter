@@ -1,10 +1,7 @@
-// Copyright 2013 The Flutter Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:go_router/go_router.dart';
+import 'package:management/pages/login_page.dart';
 
 /// This sample app shows an app with two screens.
 ///
@@ -21,7 +18,6 @@ void main() {
   runApp(const MyApp());
 }
 
-
 /// The route configuration.
 final GoRouter _router = GoRouter(
   routes: <RouteBase>[
@@ -34,7 +30,7 @@ final GoRouter _router = GoRouter(
         GoRoute(
           path: 'login',
           builder: (BuildContext context, GoRouterState state) {
-            return const LoginScreen();
+            return const LoginPage();
           },
         ),
       ],
@@ -74,6 +70,7 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
+/*
 /// The details screen
 class LoginScreen extends StatelessWidget {
   /// Constructs a [LoginScreen]
@@ -91,4 +88,4 @@ class LoginScreen extends StatelessWidget {
       ),
     );
   }
-}
+}*/
